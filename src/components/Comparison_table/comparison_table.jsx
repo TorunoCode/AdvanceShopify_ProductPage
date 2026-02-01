@@ -97,11 +97,11 @@ function comparison_table() {
 
         <div className="beckham-comparison__table">
           <div className="beckham-comparison__header-row">
-            <div className="beckham-comparison__header-cell beckham-comparison__header-cell--feature">
+            <div className="beckham-comparison__header-cell beckham-comparison__header-cell--feature ">
               <span className="beckham-comparison__header-label">Feature</span>
             </div>
 
-            <div className="beckham-comparison__header-cell beckham-comparison__header-cell--product">
+            <div className="beckham-comparison__header-cell beckham-comparison__header-cell--product d-flex flex-column flex-md-row">
               <div className="beckham-comparison__header-image">
                 <img
                   src="//im8health.com/cdn/shop/files/ess-up.png?v=1760679753&amp;width=300"
@@ -118,7 +118,7 @@ function comparison_table() {
               </h3>
             </div>
 
-            <div className="beckham-comparison__header-cell beckham-comparison__header-cell--product">
+            <div className="beckham-comparison__header-cell beckham-comparison__header-cell--product d-flex flex-column flex-md-row">
               <div className="beckham-comparison__header-image">
                 <img
                   src="//im8health.com/cdn/shop/files/bstack-up.png?v=1760679754&amp;width=300"

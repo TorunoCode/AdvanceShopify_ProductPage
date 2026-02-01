@@ -246,7 +246,7 @@ const OrganSystems = () => {
         <p>{current.description}</p>
       </div>
 
-      <div className="Pillars_Layout">
+      <div className="Pillars_Layout d-flex flex-column-reverse flex-md-row">
         {/* Sidebar Nav */}
         <div className="Pillars_Nav">
           {current.pillars.map((p) => (

@@ -1,11 +1,66 @@
-import React from 'react'
+import React, { useState }from 'react'
 import './footer.scss'
+import { motion, AnimatePresence } from "framer-motion";
+
+const faqListData = [
+  {
+    "question": "Shop",
+    "answer": [
+      "Premium Core Nutrition",
+      "The Beckham Stack",
+      "Merchandise",
+      "Shop All"
+    ]
+  },
+  {
+    "question": "Company",
+    "answer": [
+      "About Us",
+      "Science",
+      "Impact"
+    ]
+  },
+  {
+    "question": "Learn",
+    "answer": [
+      "Reviews",
+      "Ingredients",
+      "Quality and Standards",
+      "IM8 Inner Circle",
+      "IM8 vs AG1 Next Gen"
+    ]
+  },
+  {
+    "question": "Support",
+    "answer": [
+      "FAQs",
+      "Track My Order",
+      "Contact Us"
+    ]
+  },
+  {
+    "question": "IM8 Community",
+    "answer": [
+      "Instagram",
+      "TikTok"
+    ]
+  }
+];
 
 function footer() {
+     const [activeIndices, setActiveIndices] = useState([]);
+    const toggleAccordion = (index) => {
+      setActiveIndices(
+        (prev) =>
+          prev.includes(index)
+            ? prev.filter((i) => i !== index) // Remove if exists (Close)
+            : [...prev, index], // Add if not exists (Open)
+      );
+    };
   return (
     <div id="footer" className="Footer_main_new color-scheme-2 gradient" role="contentinfo">
       <div className="page-width d-flex justify-content-center flex-column">
-        <div className="footer__content-top Footer_1_new">
+        <div className="footer__content-top Footer_1_new d-none d-md-block">
           <div className="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet grid--3-col-tablet Footer_1_loops_new">
             
             {/* Shop Block */}
@@ -73,7 +128,7 @@ function footer() {
 
           {/* Newsletter Block */}
           <div className="footer-block--newsletter Footer_1_newsletter_main_new">
-            <div className="Footer_1_newsletter_mainboth_new d-none">
+            <div className="Footer_1_newsletter_mainboth_new d-block d-md-none">
               <div className="Footer_1_newsletter_innerboth_new">
                 <div className="Footer_1_newsletter_innerboth_videoimage_new">
                   <video playsInline className="Custom_video_new" autoPlay loop muted preload="metadata" poster="//im8health.com/cdn/shop/files/preview_images/fbf49de132784b63b1209cf9f32ce77d.thumbnail.0000000000.jpg?v=1724177472">
@@ -120,7 +175,50 @@ function footer() {
             </div>
           </div>
         </div>
+<div className="footer__content-bottom d-block d-md-none w-100">
+  <div className="product_tab-block_out product_info_container meta_accordions_detail_mainloops_new">
+              {faqListData.map((item, index) => (
+                <div
+                  key={index}
+                  className={`product_tab-block px-0 ${
+                    activeIndices.includes(index) ? "is-active" : ""
+                  }`}
+                  onClick={() => toggleAccordion(index)}
+                >
+                  <div className="product_tab-thumb d-flex align-items-center">
+                    <p className="cpr-expand__trigger">{item.question}</p>
+                    <motion.span
+                      animate={{
+                        rotate: activeIndices.includes(index) ? 180 : 0,
+                      }}
+                    >
+                    </motion.span>
+                  </div>
 
+                  <AnimatePresence>
+                    {activeIndices.includes(index) && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        style={{ overflow: "hidden" }}
+                      >
+                        <div className="product_tab-content">
+                          <ul>
+                          {item.answer.map((text, i) => (
+                            <li key={i} className="cpr-expand__text">
+                              <a>{text}</a>
+                            </li>
+                          ))}
+                          </ul>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              ))}
+            </div>
+</div>
         {/* Footer Bottom */}
         <div className="Footer_2_new">
           <div className="Footer_2_sides_new">

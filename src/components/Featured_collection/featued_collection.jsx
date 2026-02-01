@@ -9,7 +9,7 @@ function featued_collection() {
   <div className="align-items-baseline container d-flex flex-column page-width">
     <div className="section-header">
       <h2>Premium Core Nutrition</h2>
-      <div className="trust-badges">
+      <div className="trust-badges d-flex flex-column flex-md-row">
         <span><i className="icon-check"></i> 30-Day money back guarantee</span>
         <span><i className="icon-check"></i> Update or cancel anytime</span>
         <span><i className="icon-check"></i> Free shipping for all subscriptions</span>

@@ -12,7 +12,7 @@ function image_text() {
                 <h2>How to Enjoy</h2>
               </div>
             </div><div className="Product_image_text_column_mainloop_new">
-              <div className="Product_image_text_column_innerloop_new"><div className="Product_image_text_column_innerloop_mainboxs_new">
+              <div className="Product_image_text_column_innerloop_new d-flex flex-column flex-md-row"><div className="Product_image_text_column_innerloop_mainboxs_new">
                       <div className="Product_image_text_column_innerloop_innerboxs_new"><div className="Product_image_text_column_innerloop_innerboxs_mainboths_new">
                             <div className="Product_image_text_column_innerloop_innerboxs_innerboths_new"><div className="Product_image_text_column_innerloop_innerboxs_innerboths_videoimage_new">
                                   
@@ -59,7 +59,7 @@ function image_text() {
       </div>
       </div>
       <div className="landing-page-welcome-kit-wrapper">
-  <div className="landing-page-welcome-kit">
+  <div className="landing-page-welcome-kit d-flex flex-column flex-md-row">
     <div className="landing-page-welcome-kit__content">
       <div className="Common_title_new"><h2>Get Started with IM8 for Daily Ultimate Nutrition</h2></div>
       <div className="landing-page-welcome-kit__image mobile_screen d-block d-md-none"><img src="//im8health.com/cdn/shop/files/welcome-kit-sach.png?v=1761040602&amp;width=1200" alt="Welcome Kit" width="100%" height="100%"/></div>
@@ -109,7 +109,7 @@ function image_text() {
 <span className="btn-label text-center w-100 d-block" js-atc-btn-label="">
             Get your Free IM8 Welcome Kit Now**
           </span>
-        </div><ul>
+        </div><ul className='d-flex flex-column flex-md-row align-items-center'>
         <li><strong>30-Day</strong> money back guarantee</li>
         <li><strong>Update</strong> or <strong>cancel</strong> anytime</li>
       </ul>

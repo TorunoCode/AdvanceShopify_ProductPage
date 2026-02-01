@@ -12,7 +12,7 @@ function what_inside() {
         height="1202"
         loading="lazy"
         fetchpriority="auto"
-        className="desktop_banner"
+        className="desktop_banner d-none d-md-block"
         data-variant-type="standard"
       />
 
@@ -24,7 +24,7 @@ function what_inside() {
         height="1202"
         loading="lazy"
         fetchpriority="auto"
-        className="desktop_banner hidden"
+        className="desktop_banner d-none d-md-block hidden"
         data-variant-type="travel"
       />
 
@@ -36,7 +36,7 @@ function what_inside() {
         height="1202"
         loading="lazy"
         fetchpriority="auto"
-        className="desktop_banner hidden"
+        className="desktop_banner d-none d-md-block hidden"
         data-variant-type="onetime_standard"
       />
 
@@ -48,7 +48,7 @@ function what_inside() {
         height="1202"
         loading="lazy"
         fetchpriority="auto"
-        className="desktop_banner hidden"
+        className="desktop_banner d-none d-md-block hidden"
         data-variant-type="onetime_travel"
       />
 
@@ -60,7 +60,7 @@ function what_inside() {
         height="3752"
         loading="lazy"
         fetchpriority="auto"
-        className="mobile_banner d-block d-md-none"
+        className="mobile_bannerr d-block d-md-none d-block d-md-none"
         data-variant-type="standard"
       />
 
@@ -72,7 +72,7 @@ function what_inside() {
         height="3654"
         loading="lazy"
         fetchpriority="auto"
-        className="mobile_banner d-block d-md-none hidden"
+        className="mobile_bannerr d-block d-md-none d-block d-md-none hidden"
         data-variant-type="travel"
       />
 
@@ -84,7 +84,7 @@ function what_inside() {
         height="3752"
         loading="lazy"
         fetchpriority="auto"
-        className="mobile_banner d-block d-md-none hidden"
+        className="mobile_bannerr d-block d-md-none d-block d-md-none hidden"
         data-variant-type="onetime_standard"
       />
 
@@ -96,7 +96,7 @@ function what_inside() {
         height="3654"
         loading="lazy"
         fetchpriority="auto"
-        className="mobile_banner d-block d-md-none hidden"
+        className="mobile_bannerr d-block d-md-none d-block d-md-none hidden"
         data-variant-type="onetime_travel"
       />
     </div>

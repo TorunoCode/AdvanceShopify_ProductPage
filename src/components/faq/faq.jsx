@@ -65,7 +65,7 @@ const faq = () => {
   return (
     <div className="Index_faq_accordion_lists_main_new">
       <div className="Index_faq_accordion_lists_inner_new">
-        <div className="Index_faq_accordion_lists_sides_new">
+        <div className="Index_faq_accordion_lists_sides_new d-flex flex-column-reverse flex-md-row">
           <div className="Index_faq_accordion_lists_sides_mainleft_new">
             <div className="Index_faq_accordion_lists_sides_innerleft_new">
               <div className="Index_faq_accordion_lists_sides_innerleft_maintitle_new">
