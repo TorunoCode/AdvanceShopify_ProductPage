@@ -60,7 +60,7 @@ function footer() {
   return (
     <div id="footer" className="Footer_main_new color-scheme-2 gradient" role="contentinfo">
       <div className="page-width d-flex justify-content-center flex-column">
-        <div className="footer__content-top Footer_1_new d-none d-md-block">
+        <div className="footer__content-top Footer_1_new d-none d-md-flex">
           <div className="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet grid--3-col-tablet Footer_1_loops_new">
             
             {/* Shop Block */}
